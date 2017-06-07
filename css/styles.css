@@ -35,6 +35,7 @@ section
 textarea
 {
     width: 100% !important;
+    resize: none;
 }
 body
 {
@@ -192,6 +193,23 @@ header
 .lt-mleft
 {
     margin-left: 300px !important;
+}
+.lt-mleft .lt-toggle:before
+{
+    content: "\f00d";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #fff;
+    font-size: 32px;
+    position: absolute;
+    top: 3px;
+    background: none;
+}
+.lt-mleft .lt-toggle:after, .lt-mleft .lt-toggle span
+{
+    display: none;
 }
 .lt-header-top
 {
@@ -945,7 +963,7 @@ h1 span
 {
     overflow: hidden;
 }
-.lt-ml-s a
+.lt-ml-s a, .lt-ml-s button
 {
     display: block;
     float: left;
@@ -961,7 +979,7 @@ h1 span
     text-align: center;
     border: 4px solid #fff;
 }
-.lt-ml-s a:hover
+.lt-ml-s a:hover, .lt-ml-s button:hover
 {
     background: transparent;
     color: #fff;
@@ -4111,11 +4129,6 @@ textarea.lt-fe
 {
     background: #aff4ef;
 }
-.lt-cback
-{
-    background: url("../images/lt-cback.jpg") right top no-repeat;
-    background-size: cover;
-}
 .lt-flex
 {
     display: flex;
@@ -5277,6 +5290,7 @@ textarea.lt-fe
 }
 #lt-ct-pm .lt-tabs-menu a
 {
+    padding-top: 0;
     font-size: 36px;
     line-height: 48px;
     color: #ccc;
@@ -6753,4 +6767,63 @@ textarea.lt-fe
 .lt-pagination li:last-child
 {
     float: right;
+}
+.lt-modal .modal-content
+{
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+}
+.lt-modal .modal-header
+{
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+    background: #f59b35;
+    padding: 30px;
+}
+.lt-modal .modal-header h4
+{
+    margin: 0;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #ffd7aa;
+}
+.lt-modal .modal-header .close
+{
+    color: #ffd7aa;
+    margin-top: 0;
+    opacity: 1;
+    text-shadow: none;
+}
+.lt-modal .modal-header .close:hover
+{
+    opacity: .5;
+}
+.lt-modal .modal-body
+{
+    padding: 30px;
+}
+ .lt-btn
+{
+    margin-top: 10px;
+}
+.lt-modal .lt-f-mi
+{
+    margin-bottom: 0 !important;
+}
+.lt-modal textarea
+{
+    height: 200px;
+}
+.lt-img-in img
+{
+    max-width: 100%;
+}
+.mb30
+{
+    margin-bottom: 30px;
 }

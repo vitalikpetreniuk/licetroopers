@@ -21,7 +21,7 @@
 <body>
     <header>
         <div class="lt-header-in">
-            <div class="lt-hi-inf">
+            <div>
                 <div class="lt-header-top pad">
                     <div class="dropdown lt-lang">
                         <button id="dLabel" type="button" data-toggle="dropdown">
@@ -194,84 +194,6 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-                <div class="lt-search-m">
-                    <form>
-                        <input type="text">
-                        <button type="submit">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </form>
-                </div>
-                <div class="lt-header-block">
-                    <div class="lt-lr">
-                        <a href="#">
-                            Sign in <span>/</span> Sign up
-                        </a>
-                    </div>
-                    <div class="lt-call">
-                        <a href="#">
-                            <span>
-                                <i class="fa fa-phone"></i>
-                            </span>
-                            800-403-5423
-                        </a>
-                    </div>
-                    <div class="lt-mail">
-                        <a href="#">info@licetroopers.com</a>
-                    </div>
-                    <div class="lt-od">
-                        <div>
-                            <span>8:00-9:00 PM</span>
-                            Open 7 Days/Week
-                        </div>
-                    </div>
-                </div>
-                <div class="lt-social">
-                    <a href="#">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-pinterest-p"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="lt-hi-ins">
-                <div class="lt-header-top pad">
-                    <div class="dropdown lt-lang">
-                        <button id="dLabel2" type="button" data-toggle="dropdown">
-                            <span>
-                                Eng
-                            </span>
-                            <i class="fa fa-angle-down"></i>
-                        </button>
-                        <ul aria-labelledby="dLabel2">
-                            <li>
-                                <a href="#">
-                                    Ru
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Uk
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="lt-logo">
-                        <a href="#">
-                            <img src="images/logo.svg" alt="img">
-                        </a>
-                    </div>
                 </div>
                 <div class="lt-tm-m">
                     <div class="lt-l-nav">
@@ -821,9 +743,9 @@
                             </li>
                         </ul>
                         <div class="lt-ml-s">
-                            <a href="#">
+                            <button type="button" data-toggle="modal" data-target="#lt-modal-form">
                                 Sing up
-                            </a>
+                            </button>
                             <span>
                                 *Membership active 31 days after signup.<br>
                                 *Minimum 12 months’ commitment. Early termination will result in $95 fee.
@@ -1169,9 +1091,9 @@
                                 Yes, I'm ready t oget lice free!
                             </h3>
                             <div>
-                                <a href="tel:18004035423">
+                                <span>
                                      1.800.403.5423
-                                </a>
+                                </span>
                                 <span>
                                     lice
                                 </span>
@@ -1190,7 +1112,7 @@
                                         Please contact me
                                     </span>
                                 </button>
-                                <button type="submit" class="lt-btn-b">
+                                <button type="button" class="lt-btn-b" data-toggle="modal" data-target="#lt-modal-form-s">
                                     <span>
                                     Schedule an appointment online now
                                     </span>
@@ -1347,12 +1269,10 @@
                                 </a>
                             </div>
                             <div>
-                                <a href="tel:8004035423">
-                                    <span>
-                                        <i class="fa fa-phone"></i>
-                                    </span>
-                                    800-403-5423
-                                </a>
+                                <span>
+                                    <i class="fa fa-phone"></i>
+                                </span>
+                                800-403-5423
                             </div>
                         </div>
                     </div>
@@ -1401,6 +1321,96 @@
                 locator
             </span>
         </a>
+    </div>
+
+    <div class="modal fade lt-modal" id="lt-modal-form">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <i class="fa fa-close"></i>
+                    </button>
+                    <h4>Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="row lt-f-mi">
+                        <div class="col-xs-6 lt-form-group">
+                            <label>
+                                Email
+                            </label>
+                            <input type="text" class="lt-fe" placeholder="emma@gmail.com">
+                        </div>
+                        <div class="col-xs-6 lt-form-group">
+                            <label>
+                                Address
+                            </label>
+                            <input type="text" class="lt-fe" placeholder="Address">
+                        </div>
+                        <div class="col-xs-6 lt-form-group">
+                            <label>
+                                Full Name
+                            </label>
+                            <input type="text" class="lt-fe" placeholder="Emma L. Jackson">
+                        </div>
+                        <div class="col-xs-6 lt-form-group">
+                            <label>
+                                Phone
+                            </label>
+                            <input type="text" class="lt-fe" placeholder="+ 1.123.456.7890">
+                        </div>
+                        <div class="col-xs-12">
+                            <button type="submit" class="lt-btn">
+                                <span>
+                                    Sign up
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade lt-modal" id="lt-modal-form-s">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <i class="fa fa-close"></i>
+                    </button>
+                    <h4>Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="row lt-f-mi">
+                        <div class="col-xs-6 lt-form-group">
+                            <label>
+                                Full Name
+                            </label>
+                            <input type="text" class="lt-fe" placeholder="Emma L. Jackson">
+                        </div>
+                        <div class="col-xs-6 lt-form-group">
+                            <label>
+                                Email
+                            </label>
+                            <input type="text" class="lt-fe" placeholder="emma@gmail.com">
+                        </div>
+                        <div class="col-xs-12 lt-form-group">
+                            <label>
+                                Question
+                            </label>
+                            <textarea rows="20" cols="20" class="lt-fe"></textarea>
+                        </div>
+                        <div class="col-xs-12">
+                            <button type="submit" class="lt-btn">
+                                <span>
+                                    Send
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
 

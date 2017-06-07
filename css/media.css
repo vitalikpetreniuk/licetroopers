@@ -1074,6 +1074,12 @@
 }
 @media(max-width: 767px)
 {
+    .lt-mleft .lt-toggle:before
+    {
+        color: #f2922b;
+        top: -6px;
+        font-size: 28px;
+    }
     .lt-apm-block
     {
         display: block;
