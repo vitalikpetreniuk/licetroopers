@@ -5797,7 +5797,7 @@ textarea.lt-fe
 }
 .lt-show
 {
-    position: relative;
+    position: fixed;
     left: 0 !important;
     -webkit-box-shadow: 1px 0 30px 10px rgba(0,0,0,0.3);
     box-shadow: 1px 0 30px 10px rgba(0,0,0,0.3);
@@ -6859,11 +6859,11 @@ textarea.lt-fe
 {
     margin-bottom: 30px;
 }
-.lt-admin
+.lt-admin .lt-body
 {
     padding-top: 30px;
 }
-.lt-admin a,.lt-admin a:hover,.lt-admin a:focus
+.lt-admin table a,.lt-admin table a:hover,.lt-admin table a:focus
 {
     color: #f2922b;
 }
@@ -6883,7 +6883,6 @@ textarea.lt-fe
 .lt-admin .btn-success
 {
     display: inline-block;
-    margin: 0 0 0 70px;
     color: #fff;
     background: #f2922b;
     border: 1px solid #f2922b;

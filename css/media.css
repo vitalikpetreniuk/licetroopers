@@ -1079,7 +1079,7 @@
 }
 @media(max-width: 767px)
 {
-   .menu-index
+    .lt-admin .lt-body
     {
         padding-top: 100px;
     }
@@ -4500,7 +4500,7 @@
     {
         text-align: center;
     }
-    .menu-index h1
+    .lt-admin h1
     {
         margin-bottom: 30px !important;
     }
