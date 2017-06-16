@@ -2,7 +2,7 @@
 {
     font-family: 'VeraCouz';
     src: url('../fonts/VeraCrouz.eot');
-    src: url('../fonts/VeraCrouz.eot%3F') format('embedded-opentype'),
+    src: url('../fonts/VeraCrouz.eot') format('embedded-opentype'),
     url('../fonts/VeraCrouz.woff') format('woff'),
     url('../fonts/VeraCrouz.ttf') format('truetype'),
     url('../fonts/VeraCrouz.svg') format('svg');
@@ -2736,6 +2736,7 @@ footer a:hover:after
 .lt-ts-list
 {
     display: flex;
+    flex-wrap: wrap;
 }
 .lt-ts-list > div
 {
@@ -4160,7 +4161,7 @@ textarea.lt-fe
 }
 .lt-wblock
 {
-    padding-top: 50px;
+    padding-top: 80px;
     margin: 0 0 50px;
 }
 .lt-wblock-in
@@ -5796,6 +5797,7 @@ textarea.lt-fe
 }
 .lt-show
 {
+    position: relative;
     left: 0 !important;
     -webkit-box-shadow: 1px 0 30px 10px rgba(0,0,0,0.3);
     box-shadow: 1px 0 30px 10px rgba(0,0,0,0.3);
@@ -6856,4 +6858,43 @@ textarea.lt-fe
 .mb30
 {
     margin-bottom: 30px;
+}
+.lt-admin
+{
+    padding-top: 30px;
+}
+.lt-admin a,.lt-admin a:hover,.lt-admin a:focus
+{
+    color: #f2922b;
+}
+.lt-admin a:hover
+{
+    opacity: .7;
+}
+.lt-admin h1
+{
+    text-align: center;
+    color: #000;
+}
+.lt-admin .summary
+{
+    margin-bottom: 10px;
+}
+.lt-admin .btn-success
+{
+    display: inline-block;
+    margin: 0 0 0 70px;
+    color: #fff;
+    background: #f2922b;
+    border: 1px solid #f2922b;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 42px;
+    padding: 0 28px;
+    border-radius: 4px;
+}
+.lt-admin .btn-success:hover, .lt-admin .btn-success:active, .lt-admin .btn-success:focus
+{
+    background: #ffa800;
+    border: 1px solid #f2922b;
 }

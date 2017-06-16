@@ -1079,6 +1079,10 @@
 }
 @media(max-width: 767px)
 {
+   .menu-index
+    {
+        padding-top: 100px;
+    }
     .lt-mleft .lt-toggle:before
     {
         color: #f2922b;
@@ -4316,11 +4320,11 @@
     }
     header, .lt-header-in
     {
-        width: 100%;
+        width: 100vw;
     }
     header, .lt-header-in
     {
-        left: -100%;
+        left: -100vw;
     }
     .lt-subtitle, .lt-header-top
     {
@@ -4495,6 +4499,10 @@
     .lt-md .lt-ot-item
     {
         text-align: center;
+    }
+    .menu-index h1
+    {
+        margin-bottom: 30px !important;
     }
 }
 @media(max-width: 550px)
